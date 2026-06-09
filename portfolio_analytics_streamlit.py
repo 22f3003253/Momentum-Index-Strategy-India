@@ -327,7 +327,7 @@ with col2:
 
 st.subheader("Annual Returns")
 
-annual = returns.resample("Y").apply(
+annual = returns.resample("YE").apply(
     lambda x: (1 + x).prod() - 1
 )
 
