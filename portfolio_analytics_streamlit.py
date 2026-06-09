@@ -13,7 +13,7 @@ st.set_page_config(
 # ============================================================
 # LOAD DATA
 # ============================================================
-code_path = Path(r"C:\Users\0310a\Desktop\momentum_output")
+code_path = Path(__file__).parent
 RETURNS_PATH = code_path / "daily_returns.csv"
 STATS_PATH = code_path / "performance_stats.csv"
 WEIGHTS_PATH = code_path / "portfolio_weights_history.csv"
